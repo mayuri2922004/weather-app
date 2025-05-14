@@ -5,17 +5,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: hsla(217, 100%, 50%, 1);
+    background: hsla(189, 86%, 64%, 1);
 
-    background: hsla(210, 90%, 80%, 1);
+background: linear-gradient(90deg, hsla(189, 86%, 64%, 1) 0%, hsla(277, 67%, 77%, 1) 50%, hsla(218, 88%, 59%, 1) 100%);
 
-    background: linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-    
-    background: -moz-linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-    
-    background: -webkit-linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9FCCFA", endColorstr="#0974F1", GradientType=1 );
+background: -moz-linear-gradient(90deg, hsla(189, 86%, 64%, 1) 0%, hsla(277, 67%, 77%, 1) 50%, hsla(218, 88%, 59%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(189, 86%, 64%, 1) 0%, hsla(277, 67%, 77%, 1) 50%, hsla(218, 88%, 59%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#53DBF2", endColorstr="#CE9EEC", GradientType=1 );
 }
 
 .container {
@@ -25,10 +23,10 @@ body {
 .weather-card {
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
-    padding: 20px;
+    padding: 45px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    width: 450px;
+    width: 850px;
 }
 
 .weather-card:hover {
@@ -59,12 +57,12 @@ body {
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 #city-input-btn:hover {
-    background-color: #1565C0;
+    background-color: #101112;
 }
 
 #weather-info {
@@ -83,16 +81,53 @@ body {
 }
 
 #description {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
 #wind-speed {
     font-size: 16px;
-    color: rgb(255, 0, 0);
+    color: rgb(155, 36, 90);
 }
 
 #date {
     font-size: 14px;
-    color: rgb(255, 0, 0);
+    color: #df0c0c;
 }
+
+#forecast-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+
+
+.forecast-card {
+    background: #f9f9f9;
+    border: 1.5px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 120px;
+}
+.forecast-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.forecast-card img {
+    width: 80px;
+    height: 80px;
+}
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
